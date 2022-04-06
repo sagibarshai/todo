@@ -1,0 +1,7 @@
+.main__container {
+    display: inline-block;
+    width: 60%;
+    min-height: 100vh;
+    vertical-align: middle;
+
+}
