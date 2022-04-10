@@ -12,14 +12,15 @@ const Form = () => {
     const submitFormHandler = (event) => {
         event.preventDefault()
         if(event.target[0].value ==="") return 
-                 setFormData([...formData , {
-                 id:randomId(),    
-                 task:event.target[0].value , 
-                 date:event.target[2].value , 
-                 time: event.target[3].value,
-                 checked:false,
-                }])
-                event.target[0].value = "" 
+        let note =  {
+            id:randomId(),    
+            task:event.target[0].value , 
+            date:event.target[2].value , 
+            time: event.target[3].value,
+            checked:false
+        }
+        setFormData([...formData , note])
+        event.target[0].value = "" 
             }  
             const callCheckSound = (src) => {
                 const sound = new Howl({
@@ -29,8 +30,6 @@ const Form = () => {
                 sound.play()
             }
           
-        
-           
     return <React.Fragment>
     <form onSubmit={submitFormHandler} className="form__container">
         <input className="form__new-task" type="text" placeholder="Add a task" id="task"/>
@@ -39,18 +38,12 @@ const Form = () => {
         <input className="form__time" type="time" id="date" />
     </form>
     {formData.map((note,indx)=> { 
-        //  localStorage.setItem(note.id , JSON.stringify(note))
-        // let item = localStorage.getItem(note.id)
-        // item = JSON.parse(item)
         return <AddNewNote key={indx}
                 task={note.task} 
                 date={note.date} 
                 time={note.time}
                 checked = {note.checked}
-                // item={item}
-                formData={formData}
                 removeNoteHandler={()=> {
-                // localStorage.removeItem(note.id)
                 formData = formData.filter((note , index)=> {return index!==indx})
                 setFormData(()=>formData)
             }}
