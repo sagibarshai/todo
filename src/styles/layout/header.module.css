@@ -1,0 +1,22 @@
+.header__container {
+    height: 100px;
+    margin: 0 0 64px;
+    background-color: #0e1649;
+}
+.header-content__container {
+    margin-left:64px;
+    display: flex;
+    padding: 20px 0;
+    justify-items:center ;
+}
+.header-logo {
+ width: 60px;
+ height: 60px;   
+
+}
+.header__text {
+  font-family: 'Grape Nuts', cursive;  font-size: 50px;
+  line-height: 1.2;
+  color: #fff;
+  display: inline-block;
+}

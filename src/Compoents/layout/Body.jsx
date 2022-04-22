@@ -1,12 +1,8 @@
-import '../../styles/layout/body.css'
-import RightSide from './RightSide'
-import LeftSide from './LeftSide'
+import classes from '../../styles/layout/main.module.css'
 import Main from './Main'
-const Body = () => {
-    return <div className='body__container'>
-<LeftSide/>
+export default () => {
+    return <div className={classes['body__container']}>
 <Main/>
-<RightSide/>
     </div>
 }
-export default Body
+ 

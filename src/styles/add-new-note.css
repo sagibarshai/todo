@@ -1,0 +1,50 @@
+.note__container {
+  width: 332px;
+position: relative;
+}
+.notes__task {
+  margin: 16px auto 16px 8px;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1c1c1c;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+
+.note__remove {
+  border: none;
+  background-color: transparent;
+  vertical-align: baseline;
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  right:0%;
+  top:50%;
+  transform: translate(50% , -50%);
+
+}
+.note__container:hover > .note__remove {
+  display: inline-block;
+  cursor: pointer;
+
+}  
+.note__check {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: solid 1px #8c8c8c;
+  
+}
+
+.note__checked {
+    text-decoration: line-through;
+}

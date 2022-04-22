@@ -1,0 +1,14 @@
+.main__container {
+    vertical-align: middle;
+    margin-left: 64px;
+
+
+}
+.main__my-todos{
+    margin: 64px auto 16px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    color: #1c1c1c;
+}
