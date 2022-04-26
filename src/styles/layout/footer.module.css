@@ -1,7 +1,7 @@
     .fotter__container {
-        margin-top:10rem; 
         width: 100%;
-        height: 10px;
+        /* height: 10px; */
+        margin-top: 5rem;
     }
     .fotter__img {
         width: 100%;

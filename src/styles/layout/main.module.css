@@ -1,8 +1,7 @@
 .main__container {
     vertical-align: middle;
     margin-left: 64px;
-
-
+    min-height: 60vh;
 }
 .main__my-todos{
     margin: 64px auto 16px 0;

@@ -1,6 +1,7 @@
 .form {
     min-width: 500px;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
+
 }
 .form__new-task {
   display: inline-block;
@@ -8,23 +9,20 @@
   margin: 7px 17px 0 0;
   vertical-align: bottom;
   background-color: #fff;
-  height: 30px;
+  height: 30px; 
   border: none;
   border-bottom: 1px solid #000;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-font-size: 1rem;
-letter-spacing: 2px ;
-
-
+  font-size: 1rem;
+  letter-spacing: 2px ;
 }
 .form__new-task::placeholder {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 0.32px;
-    color: #828282
-    
+    color: #828282    
 }
 .form__new-task:focus-visible {
  outline: none;

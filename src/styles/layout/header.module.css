@@ -1,6 +1,6 @@
 .header__container {
     height: 100px;
-    margin: 0 0 64px;
+    margin: 0 0 64px auto;
     background-color: #0e1649;
 }
 .header-content__container {
